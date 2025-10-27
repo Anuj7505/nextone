@@ -1,0 +1,1513 @@
+<!-- LOAN MANAGEMENT SYSTEM (LMS) HERO SECTION - Adapted from your existing hero -->
+<div class="max-w-[80%] py-[40px] mx-auto px-[12px] flex flex-col md:flex-row gap-[20px] justify-between items-center">
+  <!-- Left Content -->
+  <div class="md:max-w-[100%] relative">
+    <!-- Main Heading -->
+    <h1 class="text-[28px] sm:text-[30px] md:text-[40px] leading-[1.3] w-full tracking-tight py-[20px] font-[600] text-slate-700">
+      LOAN MANAGEMENT SYSTEM <span class="text-orange-600">(LMS)</span>
+    </h1>
+    <hr class="bg-orange-600 h-[5px] max-w-[30%] mb-5">
+    <p class="text-slate-700 text-[16px] leading-[1.5] pt-[15px] pb-[15px]">
+      This module describes all key functionalities of the Loan Management System (LMS), including customer management, loan product management, loan application processing, and others.
+    </p>
+  </div>
+</div>
+
+<!-- Customer Management Module -->
+<section class="min-h-[30vh] py-10">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.1: Customer Management Module
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Define Customer Types
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to define different types of customers such as proprietorship firm, partnership firm, private company, individual, limited company, self-help group (SHG), trust, NGO, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Unique Identifiers
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture unique identifiers of customers such as PAN card, TIN number, GST, company registration number, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture and Modify Multiple Addresses
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture and modify multiple addresses of the customer such as registered office, communication address, office address, residential address, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Link with Google Maps
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to link the customer's address with Google Maps.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Promoter Details
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture details of promoters, partners, directors, members such as name, address, photo, signature, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture and Modify Contact Details
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture and modify multiple contact details such as phone number, mobile number, email, website, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Bank Account Details
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture bank account details.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Financial Details
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture financial details/net worth of customers and individual persons.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Modify Customer Profile
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to modify and change customer profiles such as address, contact number, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Upload Documents
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to upload photographs, KYC documents, balance sheets, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Customer Communication
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to communicate with the customer via SMS, email, etc., and maintain their history.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Approval of Customer Entries
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Maker and approval of customer entries and modification of customer profiles.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Restriction on Duplicate Entries
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to restrict duplicate customer entries.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Maintain Audit Trail
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Maintaining history/audit trail for any changes in customer profiles.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Loan Products Management Module -->
+<section class="min-h-[30vh] py-10 bg-gray-50">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.2. Loan Products Management Module
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Define Various Loan Products
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to define various loan products/schemes such as Rupee Term Loan, Working Capital Loan, Personal Loan, Home Loan, MSE Loan, Microfinance Loan, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Minimum/Maximum Loan Limits
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to define minimum and maximum loan limits for each loan product/scheme.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Set Number of Installments
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to set the minimum and maximum number of repayment installments.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Define Interest Rates
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to define interest rates (fixed, floating, and minimum & maximum interest rate) for various types of interest such as normal interest, additional interest, penal interest, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Reset/Change Interest Rates
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to reset/change the interest rate of loan products and schemes and maintain a history of interest rate changes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Loan Application Processing Module -->
+<section class="min-h-[30vh] py-10">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.3. Loan Application Processing Module
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Loan Application Details
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture loan application details such as purpose of loan, loan amount, project cost, schemes, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Assign Application Number and Generate Receipt
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to assign a unique application number/inward number and generate a receipt of acknowledgment for the application.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Upload Loan Application/Project Proposal
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to upload the loan application/project proposal.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Assign Application for Processing
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to assign the loan application for processing to an individual officer or group of officers.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Track Application Status
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to track the current status of the application.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Document Checklist
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture the document checklist and supporting documents.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate Query Letter
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate query letters asking for additional information to customers.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Restriction on Duplicate Application Entries
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to restrict duplicate application entries.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Maker and Approval
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Maker and approval of application entries by different users based on access control.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Loan Application Screening Module -->
+<section class="min-h-[30vh] py-10 bg-gray-50">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.4. Loan Application Screening Module
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare Application Screening Notes
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to prepare application screening notes to decide on outright rejection and to proceed for detailed appraisal of the proposal.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Project Cost and Means of Finance
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture project cost and details of means of finance in the screening notes.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Various Observations and Remarks
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture various observations and remarks on user-defined headings such as promoter, market, technology, raw materials, banking relationship, past track record, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Accept or Reject Application Process
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to accept or reject the application process by authorized/delegated officers or committees.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Schedule Screening Committee Meeting
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to schedule screening committee meetings and capture minutes of the screening committee meeting.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate Rejection Letter
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate regret/rejection letters (customizable) for rejected loan applications and communicate via email, SMS.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Maker and Approval
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Maker and approval of screening note entries by different users based on access control.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Loan Appraisal Management Module -->
+<section class="min-h-[30vh] py-10">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.5. Loan Appraisal Management Module
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare Appraisal Notes
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate appraisal notes based on the loan application and screening notes.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Project Cost, Means of Finance
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Capture details of project cost, means of finance, repayment schedules, interest rates, projected financial statements.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Project, Promoter, Company Profile
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture brief details about the project, promoters and company profile, technical feasibility, financial viability, market viability analysis, SWOT analysis, risk analysis, etc., and customizable based on requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture Security/Mortgage Details
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture details of security/mortgage of assets, guarantor details (individual or corporate), liquid securities (FD, bonds, etc.).
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Forward to Higher Authority
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to forward to the higher reporting officer and to the competent authority for approval of the application.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Loan Sanctioning Process Module -->
+<section class="min-h-[30vh] py-10 bg-gray-50">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.6. Loan Sanctioning Process Module:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Define various types of Sanctioning Committee
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Define various types of Sanctioning Committee based on size of loans or type of loans.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Assign members to the Sanctioning Committee
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to assign members to the Sanctioning Committee.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Schedule and reschedule Sanctioning Committee meetings
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Schedule and reschedule dates for Sanctioning Committee meetings with alerts to all members through email and SMS.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture and generate meeting minutes/decisions
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Capture and generate the minutes/decision of the various loan sanctioning committees as per the configurable standard formats.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare pre-sanction/provisional sanction letters
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate pre-sanction/provisional sanction letters mentioning all the terms and conditions as per the configurable standard formats.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare final sanction letters
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate the final sanction letters terms and conditions as per the configurable standard formats.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture acceptance letters/resolutions
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Capture the acceptance letters/resolutions from the customer with authorized signatories.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Option for direct sanctioning
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Option for direct sanctioning of the application by the delegated/authorized officer as per user-defined sanctioning power or limits or user access control.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Create loan account for sanctioned cases
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to create loan accounts for sanctioned cases.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate customizable sanction reports
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate customizable sanction reports.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Legal Documentation and Security Management -->
+<section class="min-h-[30vh] py-10">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.7. Legal Documentation and Security Management:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Define legal document checklist
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Define legal document checklist for various types of loans or customers.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate checklist letters
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate letters for document checklist.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare approval notes for legal documentation
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate notes for approval of legal documentations like loan agreement, deed of hypothecation, mortgage, guarantees, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare customizable loan agreement formats
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate the customizable format of loan agreements, deed of hypothecation, deed of mortgage, deed of guarantee, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture various charges
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture the first charge, pari-passu charge, second charge, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture charge to the ROC
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture the charge to the ROC in case of the registered company.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Upload security details to CERSAI
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to prepare and upload the details of security to the CERSAI website (Centralised security repository).
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Upload scanned legal documents and maintain security register
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to upload the scanned papers of all the legal documents and maintain a security register.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Release security documents
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to release the security documents on liquidation of loan or no dues certificates.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Loan Disbursement Management Module -->
+<section class="min-h-[30vh] py-10 bg-gray-50">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.8. Loan Disbursement Management Module:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture disbursement request details
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Capture details of the disbursement request from the customer and upload supporting documents.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate disbursement notes
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate the disbursement notes as per configurable standard formats.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture payee details
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture the payee details like Name of Machine Suppliers, Bank Account Details, PAN numbers, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare multiple advices
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate multiple advices for each approved disbursement note.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Integrate payments with Accounting System
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to integrate the payments with the Accounting System.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate disbursement letter
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate the disbursement letter to the customer and intimate through email and SMS.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture project status and compliance
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture the present status of the project, site visit reports, compliance of various pre-disbursement conditions.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate customizable disbursement reports
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate customizable disbursement reports.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Loan Receipt and Adjustment Module -->
+<section class="min-h-[30vh] py-10">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.7. Loan Receipt and Adjustment Module:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture loan receipt/repayment
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Capture the loan receipt/repayment through cash/cheque/PDCs, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate money receipt and send messages
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate the money receipt and send messages through email and SMS.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Make adjustment of receipt
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Make adjustment of receipt against the interest dues and principal dues.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Allow advance/partial prepayments adjustments
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Allow advance/partial prepayments adjustments.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Allow receipt and adjustment of SACR/Written off loan accounts
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Allow receipt and adjustment of SACR/Written off loan accounts.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Option for Manual and Auto Adjustment
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Option for Manual and Auto Adjustment as per the configurable defined rules like first debit first credit, first interest adjustment, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability for fore closure or pre-mature liquidation
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability for foreclosure or pre-mature liquidation of loan with/without penalty charges.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Option for modification/roll back of adjustments
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Option for modification/roll back of adjustment entries after approval for backdated corrections or modifications.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Integrate loan receipt with accounting system
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Integrate the loan receipt with the accounting system.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate receipt and adjustment report
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate the receipt and adjustment report.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Integrate with Accounting System for voucher
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Integrate with Accounting System for passing loan receipt voucher.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Loan Restructuring Module -->
+<section class="min-h-[30vh] py-10 bg-gray-50">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.8. Loan Restructuring Module:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture request for loan restructuring
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Capture the request for loan restructuring, rescheduling of repayment schedule, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate restructuring notes
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate restructuring notes comprising revised repayment schedule, revise interest rates, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Implement approved loan restructuring
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to implement the approved loan restructuring retrospectively.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Approve restructuring notes
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to approve the restructuring notes by committee or individual authorized officer.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture histories of all loan restructurings
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Capture the histories of all the loan restructurings.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Loan Monitoring & NPA Management Module -->
+<section class="min-h-[30vh] py-10">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.9. Loan Monitoring & NPA Management Module:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Define asset type classifications
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Define the classifications of asset types and subtypes like standard (SM1,SM2,SM3), sub-standard, doubtful (DB1,DB2,DB3), loss asset.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Configuration for NPA classification rules
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Configuration for rules for NPA classification based on number of days default.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Configuration for NPA recognition and re-classification
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Configuration for NPA recognition and re-classification on a monthly, quarterly basis, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Manual and Auto Recognition of NPA accounts
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Manual and Auto Recognition of NPA accounts.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Early Warning Signals for potential NPA
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Early Warning Signals of potential NPA accounts through email or SMS.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate Demand Advice and send
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate Demand Advice and send through email and SMS.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Define rules of NPA provisioning
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Defining the rules of NPA provisioning as per the RBI guideline.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Manual and Auto provision of NPA accounts
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Manual and Auto provision of NPA accounts and posting to respective account ledger.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Maintain history of NPA/Asset movement
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Maintain history of NPA/Asset movement for each loan account.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate asset ageing reports
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate asset ageing reports on various age brackets (1-30 days default), (31-60 days default), etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Initiate legal action for stressed or NPA Account
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to initiate legal action of stressed or NPA Account (Integrate with Legal Module).
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate Potential NPA reports
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Generate Potential NPA reports for effective loan monitoring.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="min-h-[30vh] py-10">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.10. Compromise Settlement (OTS)/ Loan Written off (SACA) Module:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to capture the request of compromise settlement /One Time Settlement (OTS) of the stress asset/NPA account.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture the request of compromise settlement /One Time Settlement (OTS) of the stress asset/NPA account.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate the OTS/Compromise Notes.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate the OTS/Compromise Notes.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Approval and implementation of compromise settlement/OTS on retrospective date.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Approval and implementation of compromise settlement/OTS on retrospective date.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Allow waiver of accrued interest and written of principal based on the compromise settlement/OTS and integrate with accounting system for necessary ledger posting
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Allow waiver of accrued interest and written of principal based on the compromise settlement/OTS and integrate with accounting system for necessary ledger posting
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to prepare revised repayment schedule of the approved compromised/OTS amount.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to prepare revised repayment schedule of the approved compromised/OTS amount.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate customisable Compromise/OTS letter
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate customisable Compromise/OTS letter
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to capture the acceptance letter of compromise /OTS offer.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to capture the acceptance letter of compromise /OTS offer.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Generate the customisable report on compromise settlement/OTS during a particular period.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Generate the customisable report on compromise settlement/OTS during a particular period.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to prepare and generate bad loan written off (SACA) notes for approval from the competent authority.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to prepare and generate bad loan written off (SACA) notes for approval from the competent authority.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Implement the bad loan written off/SACA account and integrate with accounting system for necessary ledger posting.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Implement the bad loan written off/SACA account and integrate with accounting system for necessary ledger posting.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="min-h-[30vh] py-10">
+  <div class="max-w-[90%] mx-auto px-3">
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center">
+      1.11. Loan Account Closure Module:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate loan account closure notes.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate loan account closure notes.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate "No Due Certificate"
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate "No Due Certificate"
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Capture the request for release of security documents on closure or liquidation of loan.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Capture the request for release of security documents on closure or liquidation of loan.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate release notes of security documents on closure of loan account.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate release notes of security documents on closure of loan account.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Auto alert before release of security if there is any charges to third party or to other additional loans.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Auto alert before release of security if there is any charges to third party or to other additional loans.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Prepare and generate security release letter to the customer.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Prepare and generate security release letter to the customer.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to generate the report of liquidated or closed loan accounts.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate the report of liquidated or closed loan accounts.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="text-2xl sm:text-[34px] leading-[38px] sm:leading-[45px] mx-auto w-full tracking-tight font-medium text-gray-800 text-center mt-10">
+      1.12. Reporting Module:
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 py-8">
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to generate various type of customisable summary or detail sanction reports on state wise, department wise, dealing officer wise, sector-industry wise, branch wise, MSME, etc.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate various type of customisable summary or detail sanction reports on state wise, department wise, dealing officer wise, sector-industry wise, branch wise, MSME, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to generate different types of customisable summary or detail disbursement reports based on state, department, dealing officer, sector, industry type, branch office, MSME type, etc.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate different types of customisable summary or detail disbursement reports based on state, department, dealing officer, sector, industry type, branch office, MSME type, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to generate summary and detailed Loan Recovery Reports based on date, state, branch office, sector, industry, dealing officer, asset type, etc.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate summary and detailed Loan Recovery Reports based on date, state, branch office, sector, industry, dealing officer, asset type, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to generate summary and detailed NPA reports on various criteria.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate summary and detailed NPA reports on various criteria.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to generate summary and detailed report of OTS and SACA Account
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate summary and detailed report of OTS and SACA Account
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to generate report on Receipt Details and Loan Outstanding
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate report on Receipt Details and Loan Outstanding
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-100 p-5 group hover:bg-orange-50 hover:scale-105 duration-500 rounded-xl flex flex-col justify-between">
+        <div>
+          <p class="text-[18px] sm:text-[20px] font-semibold text-slate-800 group-hover:text-orange-600">
+            Ability to generate statement of loan account, statement of calculation of interest, etc.
+          </p>
+          <p class="text-[15px] text-slate-600 mt-3 leading-[23px]">
+            Ability to generate statement of loan account, statement of calculation of interest, etc.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="px-4 py-16 bg-gradient-to-r from-gray-900 to-black text-white">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 animate-pulse">
+      Certifications & Accolades
+    </h2>
+    <p class="text-center text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+      We are proud to hold the following certifications, reflecting our commitment to quality, innovation, and compliance. Click on any certification to view more details.
+    </p>
+
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <li *ngFor="let cert of certifications"
+          class="certification-item bg-gray-800 hover:bg-gray-700 transition-all duration-300 ease-in-out p-6 rounded-lg shadow-xl hover:shadow-2xl cursor-pointer transform hover:-translate-y-2"
+          (click)="openCertificateModal(cert)">
+        <div class="flex items-center space-x-4">
+          <span class="text-3xl" [ngClass]="cert.iconColor">{{ cert.icon }}</span>
+          <div>
+            <h3 class="text-xl font-bold mb-1">{{ cert.title }}</h3>
+            <p class="text-gray-400 text-sm">{{ cert.description }}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- The Angular Certificate Modal -->
+<div *ngIf="showCertificateModal" class="modal-overlay" (click)="closeCertificateModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-button" (click)="closeCertificateModal()">&times;</span>
+    <ng-container *ngIf="selectedCertificate">
+      <h3 class="text-2xl font-bold mb-4 text-center text-gray-800">{{ selectedCertificate.title }}</h3>
+      <img [src]="selectedCertificate.certificateSrc" [alt]="selectedCertificate.title + ' Certificate'" class="certificate-image">
+    </ng-container>
+  </div>
+</div>

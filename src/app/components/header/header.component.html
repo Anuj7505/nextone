@@ -1,0 +1,494 @@
+<header class="navbar">
+  <!-- Logo Section -->
+  <a
+    routerLink="/home"
+    aria-label="Home"
+    class="flex items-center gap-3 ml-6"
+  >
+    <!-- Logo Image -->
+    <img
+      src="assets/N6.jpg"
+      alt="logo"
+      class="h-[95px] w-auto object-contain transition-transform duration-300 hover:scale-105"
+    />
+
+    <!-- Desktop view (side of logo) - The nexTonecodes text -->
+    <div class="hidden md:flex flex-col ml-2">
+      <span
+        class="text-2xl font-bold tracking-wider bg-gradient-to-r
+               from-[#ff3b2e] via-[#ff7b00] via-[#ffa927] via-[#8847ff] to-[#1b67b2]
+               bg-clip-text text-transparent drop-shadow-sm"
+      >
+        nexTonecodes
+      </span>
+      <span class="text-sm font-semibold text-slate-500 mt-0">
+        Soft & Tech
+      </span>
+    </div>
+  </a>
+
+  <!-- MOBILE Contact Icon - Visible only on mobile, between logo and hamburger -->
+  <button
+    *ngIf="showMobileContactIcon"
+    class="fixed bottom-5 right-5 bg-blue-600 text-white rounded-full p-3 shadow-lg md:hidden mobile-headphone-contact-icon"
+    (click)="toggleMobileContactPopup()"
+  >
+    🎧
+  </button>
+
+  <!-- Mobile Contact Popup -->
+  <div *ngIf="showMobileContactPopup" class="fixed bottom-20 right-5 bg-white shadow-lg rounded-md p-4 w-64 md:hidden animate-slide-down">
+    <p class="font-semibold mb-2">Contact Us</p>
+    <p>📞 +91 9876543210</p>
+    <p>✉️ info&#64;example.com</p>
+  </div>
+
+
+  
+
+
+
+  <!-- Desktop Navbar and Contact Us button -->
+  <div class=" hidden md:flex md:w-auto items-center" id="Header-default">
+        <ul class="font-medium flex gap-[28px] ">
+            <!-- Company with Dropdown -->
+            <li class="relative group "
+                (mouseleave)="closeAllDropdowns()"
+                (mouseenter)="openDropdown('company')">
+                <div class="flex items-center gap-[8px] text-[15px] lg:text-[16px] text-slate-700 cursor-pointer leading-[32px] font-[500] uppercase"
+                     (click)="toggleDropdown('company')">
+                    Company
+                    <svg  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          class="text-[18px] transition-transform transform duration-500 ease-in-out"
+                          [class.-rotate-180]="activeDropdown === 'company'" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
+                    </svg>
+                  </div>
+
+                <!-- Mega Dropdown Content for Company -->
+                <div *ngIf="activeDropdown === 'company'"
+                     class="absolute bg-white shadow-xl rounded-md
+                            top-[calc(100%+0px)] w-[950px] z-50 p-4
+                            -left-[150px] ">
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="col-span-2 grid grid-cols-2 gap-y-6 gap-x-4">
+                            <!-- About Us -->
+                            <a routerLink="about" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                                <img src="assets/abts.svg" alt="About Us Icon" class="w-14 h-14 mt-1 p-2 rounded-full bg-blue-100">
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">About Us</h4>
+                                    <p class="text-sm text-slate-600">Discover our success, mission, and values driving innovative digital solutions.</p>
+                                </div>
+                            </a>
+
+                            <!-- Our Team -->
+                            <a routerLink="team" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                                <img src="assets/tem.svg" alt="Our Team Icon" class="w-14 h-14 mt-1 p-2 rounded-full bg-red-100">
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">Our Team</h4>
+                                    <p class="text-sm text-slate-600">Meet the experts behind the innovation and contribute to our success.</p>
+                                </div>
+                            </a>
+
+                           <!-- Our Partners -->
+                            <a routerLink="clients" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                                <img src="assets/ptnr.svg" alt="Partners Icon" class="w-14 h-14 mt-1 p-2 rounded-full bg-orange-100">
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">Our Partners</h4>
+                                    <p class="text-sm text-slate-600">Collaborating with trusted partners to bring impactful projects to life.</p>
+                                </div>
+                            </a>
+
+                            <!-- Careers -->
+                            <a routerLink="career" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                                <img src="assets/crr.svg" alt="Careers Icon" class="w-14 h-14 mt-1 p-2 rounded-full bg-yellow-100">
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">Careers</h4>
+                                    <p class="text-sm text-slate-600">Explore exciting opportunities to innovate, learn and lead in technology.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Column 3 (Image Section) -->
+                        <div class="col-span-1">
+                            <div class="bg-gray-100 rounded-md overflow-hidden h-full">
+                                <img src="assets/cmpny.webp" alt="Company Office" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Services with Dropdown -->
+             <li class="relative group"
+                (mouseleave)="closeAllDropdowns()"
+                (mouseenter)="openDropdown('services')">
+                  <div
+                    class="flex items-center gap-[8px] text-[15px] lg:text-[16px] text-slate-700 cursor-pointer leading-[32px] font-[500] uppercase"
+                    (click)="toggleDropdown('services')"
+                  >
+                    Services
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="text-[18px] transition-transform transform duration-500 ease-in-out"
+                      [class.-rotate-180]="activeDropdown === 'services'"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                      ></path>
+                    </svg>
+                  </div>
+
+                  <!-- Services Mega Dropdown -->
+                  <div
+                    *ngIf="activeDropdown === 'services'"
+                    class="absolute bg-white shadow-xl rounded-md
+                            top-[calc(100%+0px)] w-[1000px] z-50 p-6
+                            -left-[350px] "
+                  >
+                    <!-- Column 1 -->
+                    <div class="col-span-2 grid grid-cols-3 gap-y-6 gap-x-4">
+
+
+                      <a routerLink="software" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/sd.svg" alt="Software Dev" class="w-14 h-14 mt-1 p-2 rounded-full bg-purple-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">Software Development</h4>
+                          <p class="text-sm text-slate-600">Tailored software solutions built for performance.</p>
+                        </div>
+                      </a>
+
+                      <a routerLink="mobile" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/mobileapp.svg" alt="Mobile Dev" class="w-14 h-14 mt-1 p-2 rounded-full bg-yellow-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">Mobile App Development</h4>
+                          <p class="text-sm text-slate-600">Innovative apps for Android and iOS platforms.</p>
+                        </div>
+                      </a>
+
+                       <a routerLink="genai" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/genai.svg" alt="Generative AI" class="w-14 h-14 mt-1 p-2 rounded-full bg-green-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">Generative AI</h4>
+                          <p class="text-sm text-slate-600">Harness the power of AI to create and innovate.</p>
+                        </div>
+                      </a>
+
+                      <a routerLink="iot" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/iot.svg" alt="IoT Development" class="w-14 h-14 mt-1 p-2 rounded-full bg-yellow-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">IoT Development</h4>
+                          <p class="text-sm text-slate-600">Connecting devices and systems for a smarter future.</p>
+                        </div>
+                      </a>
+
+                      <a routerLink="content-moderation" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/cm12.svg" alt="Content Moderation" class="w-14 h-14 mt-1 p-2 rounded-full bg-purple-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">Content Moderation</h4>
+                          <p class="text-sm text-slate-600">Ensuring safe and appropriate user-generated content.</p>
+                        </div>
+                      </a>
+
+                      <a routerLink="ui" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/uiii.svg" alt="UI/UX Design" class="w-14 h-14 mt-1 p-2 rounded-full bg-red-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">UI/UX Design</h4>
+                          <p class="text-sm text-slate-600">Design experiences that engage and inspire.</p>
+                        </div>
+                      </a>
+
+                       <a routerLink="bpo" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/bpo.svg" alt="BPO Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-blue-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">BPO Service</h4>
+                          <p class="text-sm text-slate-600">Efficient outsourcing solutions for your business growth.</p>
+                        </div>
+                      </a>
+
+                      <a routerLink="inbound" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/mci.svg" alt="Inbound Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-green-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">Multi-Channel Inbound</h4>
+                          <p class="text-sm text-slate-600">Engage customers through inbound communication platforms.</p>
+                        </div>
+                      </a>
+
+                      <a routerLink="outbound" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <img src="assets/mco.svg" alt="Outbound Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-orange-100" />
+                        <div>
+                          <h4 class="font-semibold text-slate-800">Multi-Channel Outbound</h4>
+                          <p class="text-sm text-slate-600">Reach your audience through efficient outbound channels.</p>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+            </li>
+
+            <!-- Products with Dropdown -->
+            <li class="relative group"
+                (mouseleave)="closeAllDropdowns()"
+                (mouseenter)="openDropdown('products')">
+              <div class="flex gap-[8px] items-center text-[15px] lg:text-[16px] text-slate-700 cursor-pointer leading-[32px] font-[500] uppercase"
+                   (click)="toggleDropdown('products')">Products
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                     class="text-[18px] transition-transform transform  duration-500 ease-in-out"
+                     [class.-rotate-180]="activeDropdown === 'products'" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg></div>
+                <!-- Dropdown Content for Products -->
+               <div
+                  *ngIf="activeDropdown === 'products'"
+                  class="absolute bg-white shadow-xl rounded-md
+                                top-[calc(100%+0px)] w-[1000px] z-50 p-6
+                                -left-[500px] "
+                >
+                  <!-- Column 1 -->
+                  <div class="col-span-2 grid grid-cols-3 gap-y-0 gap-x-4">
+                    <a routerLink="campus-radar" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/bpo.svg" alt="BPO Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-blue-100" />
+                      <div>
+                        <h4 class="font-semibold mt-1 p-3 text-slate-800">Campus Radar</h4>
+                      </div>
+                    </a>
+
+                    <a routerLink="capital-radar" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/mci.svg" alt="Inbound Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-green-100" />
+                      <h4 class="font-semibold mt-1 p-3 text-slate-800">Capital Radar</h4>
+                      <div></div>
+                    </a>
+
+                    <a routerLink="care-radar" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/mco.svg" alt="Outbound Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-orange-100" />
+                      <div>
+                        <h4 class="font-semibold mt-1 p-3 text-slate-800">Care Radar</h4>
+                      </div>
+                    </a>
+
+                    <a routerLink="market-radar" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/sd.svg" alt="Software Dev" class="w-14 h-14 mt-1 p-2 rounded-full bg-purple-100" />
+                      <div>
+                        <h4 class="font-semibold mt-1 p-3 text-slate-800">Market Radar</h4>
+                      </div>
+                    </a>
+
+                    <a routerLink="the-path" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/mobileapp.svg" alt="Mobile Dev" class="w-14 h-14 mt-1 p-2 rounded-full bg-yellow-100" />
+                      <div>
+                        <h4 class="font-semibold mt-1 p-3 text-slate-800">The Path</h4>
+                      </div>
+                    </a>
+
+                    <a routerLink="itms" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/uiii.svg" alt="UI/UX Design" class="w-14 h-14 mt-1 p-2 rounded-full bg-red-100" />
+                      <div>
+                        <h4 class="font-semibold mt-1 p-3 text-slate-800">ITMS</h4>
+                      </div>
+                    </a>
+                    <a routerLink="vidya-app" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/uiii.svg" alt="UI/UX Design" class="w-14 h-14 mt-1 p-2 rounded-full bg-red-100" />
+                      <div>
+                        <h4 class="font-semibold mt-1 p-3 text-slate-800">Vidya App</h4>
+                      </div>
+                    </a>
+                    <a routerLink="tap-spring" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/uiii.svg" alt="UI/UX Design" class="w-14 h-14 mt-1 p-2 rounded-full bg-red-100" />
+                      <div>
+                        <h4 class="font-semibold mt-1 p-3 text-slate-800">Tap Spring</h4>
+                      </div>
+                    </a>
+                    <a routerLink="admin" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                      <img src="assets/uiii.svg" alt="UI/UX Design" class="w-14 h-14 mt-1 p-2 rounded-full bg-red-100" />
+                      <div>
+                        <h4 class="font-semibold mt-1 p-3 text-slate-800">1 Admin</h4>
+                      </div>
+                    </a>
+                  </div>
+            </div>
+            </li>
+            <!-- Industries with Dropdown -->
+            <li class="relative group"
+                (mouseleave)="closeAllDropdowns()"
+                (mouseenter)="openDropdown('industries')">
+              <div class="flex gap-[8px] items-center text-[15px] lg:text-[16px] text-slate-700 cursor-pointer leading-[32px] font-[500] uppercase"
+                   (click)="toggleDropdown('industries')">Industries
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                     class="text-[18px] transition-transform transform  duration-500 ease-in-out"
+                     [class.-rotate-180]="activeDropdown === 'industries'" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg></div>
+                <!-- Dropdown Content for Industries -->
+              <div
+                *ngIf="activeDropdown === 'industries'"
+                class="absolute bg-white shadow-xl rounded-md
+                                top-[calc(100%+0px)] w-[1000px] z-50 p-6
+                                -left-[550px] "
+              >
+                <!-- Column 1 -->
+                <div class="col-span-2 grid grid-cols-3 gap-y-2 gap-x-2">
+                  <a routerLink="edtech" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                    <img src="assets/edtech.svg" alt="BPO Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-blue-100" />
+                    <div>
+                      <h4 class="font-semibold mt-1 p-3 text-slate-800">EdTech</h4>
+                    </div>
+                  </a>
+
+                  <a routerLink="healthcare" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                    <img src="assets/healthcare.svg" alt="Inbound Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-green-100" />
+                    <div>
+                      <h4 class="font-semibold mt-1 p-3 text-slate-800">Healthcare</h4>
+                    </div>
+                  </a>
+
+                  <a routerLink="fintech" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                    <img src="assets/fintech.svg" alt="Outbound Service" class="w-14 h-14 mt-1 p-2 rounded-full bg-orange-100" />
+                    <div>
+                      <h4 class="font-semibold mt-1 p-3 text-slate-800">FinTech</h4>
+                    </div>
+                  </a>
+
+                  <a routerLink="auto-manufacturing" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                    <img src="assets/manuf.svg" alt="Software Dev" class="w-14 h-14 mt-1 p-2 rounded-full bg-purple-100" />
+                    <div>
+                      <h4 class="font-semibold mt-1 p-3 text-slate-800">Auto&amp;Manufacturing</h4>
+                    </div>
+                  </a>
+
+                  <a routerLink="ai-ml" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                    <img src="assets/genAii.svg" alt="Mobile Dev" class="w-14 h-14 mt-1 p-2 rounded-full bg-yellow-100" />
+                    <div>
+                      <h4 class="font-semibold mt-1 p-3 text-slate-800">AI&amp;ML</h4>
+                    </div>
+                  </a>
+
+                  <a routerLink="public-sector-government" (click)="closeAllDropdowns()" class="flex items-start gap-3 p-2 rounded-lg hover:bg-blue-50 transition-colors">
+                    <img src="assets/pbsg.svg" alt="UI/UX Design" class="w-14 h-14 mt-1 p-2 rounded-full bg-red-100" />
+                    <div>
+                      <h4 class="font-semibold mt-1 p-3 text-slate-800">Public Sector&amp;Government</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </div>
+
+  <!-- Contact Us Button (Desktop) -->
+  <a routerLink="contact" (click)="closeAllDropdowns()" class="hidden md:flex justify-start ml-8">
+  <button class="bg-[#1b67b2] text-white rounded-[10px] uppercase
+    duration-500 font-[500] text-[15px] lg:text-[15px] px-[30px] py-[8px] flex items-center justify-center whitespace-nowrap
+    ml-">
+    Contact Us
+  </button>
+</a>
+
+
+   <!-- Mobile Hamburger -->
+<button
+  class="hamburger-btn text-gray-800 text-3xl md:hidden"
+  (click)="toggleMobileMenu()"
+  aria-label="Menu"
+>
+  <i
+    class="fa-solid"
+    [ngClass]="isMobileMenuOpen ? 'fa-xmark rotate-180' : 'fa-bars'"
+  ></i>
+</button>
+
+
+
+  <!-- Mobile Menu -->
+  <div *ngIf="isMobileMenuOpen" class="absolute top-full left-0 w-full bg-white shadow-md z-50 md:hidden mobile-menu-content">
+    <ul class="flex flex-col p-4 gap-2 uppercase">
+
+      <!-- Company -->
+      <li>
+        <div (click)="toggleMobileDropdown('company')" class="flex justify-between items-center cursor-pointer">
+          Company <svg  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          class="text-[18px] transition-transform transform duration-500 ease-in-out"
+                          [class.-rotate-180]="activeMobileDropdown === 'company'" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
+                    </svg>
+        </div>
+        <ul *ngIf="activeMobileDropdown === 'company'" class="pl-4 flex flex-col gap-2">
+          <li><a routerLink="about">About Us</a></li>
+          <li><a routerLink="team">Our Team</a></li>
+          <li><a routerLink="clients">Our Partners</a></li>
+          <li><a routerLink="career">Careers</a></li>
+        </ul>
+      </li>
+
+      <!-- Services -->
+      <li>
+        <div (click)="toggleMobileDropdown('services')" class="flex justify-between items-center cursor-pointer">
+          Services <svg  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          class="text-[18px] transition-transform transform duration-500 ease-in-out"
+                          [class.-rotate-180]="activeMobileDropdown === 'services'" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
+                    </svg>
+        </div>
+        <ul *ngIf="activeMobileDropdown === 'services'" class="pl-4 flex flex-col gap-2">
+          <li><a routerLink="ui">UI/UX Design</a></li>
+          <li><a routerLink="genai">Generative AI</a></li>
+          <li><a routerLink="iot">IoT Development</a></li>
+          <li><a routerLink="content-moderation">Content Moderation</a></li>
+          <li><a routerLink="software">Software Development</a></li>
+          <li><a routerLink="mobile">Mobile App Development</a></li>
+          <li><a routerLink="inbound">Multi-Channel Inbound</a></li>
+          <li><a routerLink="outbound">Multi-Channel Outbound</a></li>
+          <li><a routerLink="bpo">BPO</a></li>
+
+        </ul>
+      </li>
+
+      <!-- Products -->
+      <li>
+        <div (click)="toggleMobileDropdown('products')" class="flex justify-between items-center cursor-pointer">
+          Products <svg  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          class="text-[18px] transition-transform transform duration-500 ease-in-out"
+                          [class.-rotate-180]="activeMobileDropdown === 'products'" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
+                    </svg>
+        </div>
+        <ul *ngIf="activeMobileDropdown === 'products'" class="pl-4 flex flex-col gap-2">
+          <li><a routerLink="campus-radar">Campus Radar</a></li>
+          <li><a routerLink="capital-radar">Capital Radar</a></li>
+          <li><a routerLink="care-radar">Care Radar</a></li>
+          <li><a routerLink="market-radar">Market Radar</a></li>
+          <li><a routerLink="the-path">The Path</a></li>
+          <li><a routerLink="itms">ITMS</a></li>
+          <li><a routerLink="vidya-app">Vidya App</a></li>
+          <li><a routerLink="tap-spring">Tap Spring</a></li>
+          <li><a routerLink="admin">1 Admin</a></li>
+        </ul>
+      </li>
+
+      <!-- Industries -->
+      <li>
+        <div (click)="toggleMobileDropdown('industries')" class="flex justify-between items-center cursor-pointer">
+          Industries <svg  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                          class="text-[18px] transition-transform transform duration-500 ease-in-out"
+                          [class.-rotate-180]="activeMobileDropdown === 'industries'" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
+                    </svg>
+        </div>
+        <ul *ngIf="activeMobileDropdown === 'industries'" class="pl-4 flex flex-col gap-2">
+          <li><a routerLink="edtech">EdTech</a></li>
+          <li><a routerLink="healthcare">Healthcare</a></li>
+          <li><a routerLink="fintech">FinTech</a></li>
+          <li><a routerLink="auto-manufacturing">Auto & Manufacturing</a></li>
+          <li><a routerLink="ai-ml">AI & ML</a></li>
+          <li><a routerLink="public-sector-government">Public Sector & Government</a></li>
+        </ul>
+      </li>
+
+
+
+
+    </ul>
+  </div>
+  
+</header>

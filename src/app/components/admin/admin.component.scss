@@ -1,0 +1,133 @@
+/* src/app/counter/counter.component.scss */
+
+/* Custom styles for the certificate modal */
+.modal-overlay {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Allows scrolling if image is too tall */
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in total dimensions */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px; /* Max width for larger screens */
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+    from {transform: translateY(-50px); opacity: 0}
+    to {transform: translateY(0); opacity: 1}
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 1001; /* Ensure close button is above everything else in modal */
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.certificate-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-animate="fade"].active {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+[data-animate="slide"].active {
+  animation: slideUp 1s ease-out forwards;
+}
+
+.animate-on-scroll.active {
+   animation: fadeIn 1s ease-out forwards; /* या slideUp, जो भी आप default चाहते हैं */
+}
+.feature-card {
+  background-color: #212529; // यह पहले वाले से अलग है
+  color: #f8fafc;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  // box-shadow यहाँ गायब है, अगर आपको चाहिए तो इसे जोड़ दें
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  background-color: #1e293b;
+}
+.feature-card span {
+  font-size: 2rem;
+  // display: block यहाँ गायब है, अगर आपको चाहिए तो इसे जोड़ दें
+}
+.feature-card h4 {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.feature-card p {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+.feature-box {
+  background-color: #212529;
+  color: #f8fafc;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.feature-box:hover {
+  transform: translateY(-4px);
+  background-color: #1e293b;
+}

@@ -1,0 +1,385 @@
+<app-hero></app-hero>
+
+<!-- AWS Partner & Competencies Section -->
+<div class="border border-slate-300 bg-white mx-auto my-8 min-h-[40vh] max-w-[90%] rounded-2xl px-4 py-6">
+  <div class="flex flex-col items-center justify-around gap-6 py-6 sm:flex-row">
+    <!-- AWS Partner Logo -->
+    <div class="flex h-[250px] w-[250px] items-center justify-center">
+      <img src="assets/N4.jpg" alt="AWS Advanced Partner" class="max-h-full max-w-full" />
+    </div>
+    <!-- Competencies List -->
+    <div>
+      <ul class="grid grid-cols-2 gap-3 text-[15px] font-medium text-slate-800 sm:grid-cols-2 sm:text-[16px]">
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Managed Security Services</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> DevOps Implementation</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Cloud Operations & Management</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Media & Entertainment Solutions</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Education & E-Learning Platforms</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Web Application Security</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Database Design & Management</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> IT Solution Consulting</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Content Delivery Optimization</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Cloud Hosting & Storage Solutions</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Public Sector & Government Solutions</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Marketplace Integration Services</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Containerization & Kubernetes Services</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> IT Systems Management</li>
+  <li class="flex items-center gap-3"><span class="text-orange-600">●</span> Compliance & Configuration Management</li>
+</ul>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Business Impact Section -->
+<section class="min-h-[40vh] bg-white py-10">
+  <div class="mx-auto max-w-[90%] text-center">
+    <h1 class="text-2xl font-medium leading-snug text-slate-900 md:text-4xl">
+      Revolutionizing Business with Technology Beyond <br />Borders and Platforms
+    </h1>
+
+    <div class="grid grid-cols-1 gap-8 pt-10 text-left sm:grid-cols-2">
+
+      <!-- Global Impact -->
+      <div>
+        <h2 class="text-lg font-semibold text-[#1b67b2]">Global Impact Across Industries</h2>
+        <p class="mt-2 text-slate-700">
+          At nexTonecodes, we deliver tailor-made technology solutions that transform businesses across healthcare, finance, education, media, and manufacturing. Our expertise ensures measurable impact, operational efficiency, and enhanced customer engagement worldwide.
+        </p>
+      </div>
+
+      <!-- Expert Team -->
+      <div>
+        <h2 class="text-lg font-semibold text-[#1b67b2]">100+ Tech Experts</h2>
+        <p class="mt-2 text-slate-700">
+          Our passionate team of over 100 developers, engineers, and designers brings deep expertise in cloud solutions, DevOps, AI, and enterprise-grade applications. We focus on building scalable, secure, and future-ready platforms tailored to client needs.
+        </p>
+      </div>
+
+      <!-- Projects Delivered -->
+      <div>
+        <h2 class="text-lg font-semibold text-[#1b67b2]">1000+ Projects Delivered</h2>
+        <p class="mt-2 text-slate-700">
+          With a proven track record of delivering over 1000 successful projects, nexTonecodes drives digital transformation for businesses of all sizes. From startups to Fortune 500 companies, our solutions streamline processes, enhance productivity, and generate tangible ROI.
+        </p>
+      </div>
+
+      <!-- Innovation & Growth -->
+      <div>
+        <h2 class="text-lg font-semibold text-[#1b67b2]">Driving Growth with Innovative Solutions</h2>
+        <p class="mt-2 text-slate-700">
+          We empower organizations to innovate and grow by leveraging cutting-edge technologies like AI, cloud computing, and IoT. Partner with us to unlock new opportunities, accelerate product development, and achieve competitive advantage in a rapidly evolving digital landscape.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- AWS Advanced Consulting Partner Section -->
+<section class="min-h-[70vh] bg-cover bg-no-repeat px-4 py-10" style="background-image: url('assets/banner.webp')">
+  <div class="mx-auto flex max-w-[90%] flex-col items-start justify-between gap-8 sm:flex-row">
+    <!-- LEFT SIDE -->
+   <div class="sm:sticky top-[80px] sm:max-w-[50%]">
+  <img src="assets/N6.jpg" alt="nexTonecodes Product" class="h-[220px] w-[250px] object-contain" />
+
+  <h2 class="py-3 text-2xl font-bold text-slate-800 sm:text-4xl">
+    Our Innovative nexTonecodes Products
+  </h2>
+
+  <p class="py-4 text-[18px] font-medium leading-[1.6] text-slate-800">
+    nexTonecodes delivers cutting-edge solutions to help businesses optimize operations and drive growth. Our products are designed for efficiency, reliability, and seamless integration across diverse industries.
+  </p>
+</div>
+
+    <!-- RIGHT SIDE (Service List) -->
+    <div class="sm:min-w-[50%]">
+      <div
+        *ngFor="let service of services"
+        class="flex cursor-pointer items-center justify-between border-b-2 border-slate-400 px-5 py-6 transition hover:bg-slate-100"
+      >
+        <p class="font-medium text-[#1b67b2]">{{ service }}</p>
+        <span class="flex items-center justify-center rounded-full bg-sky-100/70 p-2 text-[#1b67b2]">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 3.172l-6.414 6.414c-.781.781-.781 2.047 0 2.828s2.047.781 2.828 0l1.586-1.586v7.242c0 1.104.895 2 2 2 1.104 0 2-.896 2-2v-7.242l1.586 1.586c.391.391.902.586 1.414.586s1.023-.195 1.414-.586c.781-.781.781-2.047 0-2.828l-6.414-6.414z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cybersecurity Services Section -->
+<div class="mt-12 bg-sky-100/30 py-10">
+  <div class="mx-auto flex flex-col gap-8 max-w-[90%] md:flex-row md:items-start md:gap-10">
+    <!-- Left Content -->
+
+<div class="md:w-1/2 flex-shrink-0 space-y-6">
+  <p class="text-3xl md:text-4xl font-extrabold leading-snug text-slate-900">
+    Advanced
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-sky-400">
+      Cybersecurity
+    </span>
+    Solutions by
+    <span class="text-[#1b67b2] font-bold">nexTonecodes</span>
+  </p>
+
+  <p class="text-base md:text-lg leading-relaxed text-slate-700">
+    We provide <span class="font-semibold text-slate-900">next-generation cybersecurity</span> solutions to
+    <span class="font-semibold text-slate-900">protect</span>, <span class="font-semibold text-slate-900">detect</span>, and
+    <span class="font-semibold text-slate-900">respond</span> to threats across your digital infrastructure.
+    Safeguard your business with <span class="text-[#1b67b2] font-medium">intelligent threat detection</span> and automated incident response.
+  </p>
+
+  <a routerLink="/cybersecurity">
+    <button class="group mt-4 flex items-center gap-3 rounded-2xl bg-[#1b67b2] px-6 py-3 font-semibold text-white shadow-lg hover:bg-blue-700 hover:shadow-xl transform transition-all duration-300">
+      Explore More
+      <span class="inline-block transition-transform duration-300 group-hover:translate-x-2 rotate-0 group-hover:rotate-12">
+        <svg stroke="currentColor" fill="currentColor" viewBox="0 0 512 512" class="h-5 w-5">
+          <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+        </svg>
+      </span>
+    </button>
+  </a>
+</div>
+
+    <!-- Right Services Grid -->
+    <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS1.svg" alt="System Protection" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">System Protection</span>
+      </div>
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS2.svg" alt="Web Security" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">Web Security</span>
+      </div>
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS3.svg" alt="Application Security" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">Application Security</span>
+      </div>
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS4.svg" alt="Cloud Security" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">Cloud Security</span>
+      </div>
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS5.svg" alt="Vulnerability Management" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">Vulnerability Management</span>
+      </div>
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS6.svg" alt="Data Classification" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">Data Classification & Risk Mitigation</span>
+      </div>
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS7.svg" alt="Security Info" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">Security Info & Event Management</span>
+      </div>
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS8.svg" alt="Proactive Breach" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">Proactive Breach & Attack Simulation</span>
+      </div>
+      <div class="flex items-center gap-3 rounded-lg border border-[#1b67b2] bg-white p-4 transition hover:scale-105 break-words">
+        <img src="assets/CS9.svg" alt="Identity Access" class="h-9 w-9 flex-shrink-0" />
+        <span class="text-sm font-medium text-slate-800">Identity & Access Management</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="max-w-[95%] mx-auto py-10 overflow-hidden">
+  <h2 class="text-center text-2xl md:text-3xl font-semibold text-slate-900 mb-8">
+    Our Customers
+  </h2>
+
+  <div class="relative w-full overflow-hidden">
+    <!-- Logo track -->
+    <div class="flex animate-scroll whitespace-nowrap">
+      <!-- Original logos -->
+      <img src="assets/tcil.png" alt="TCIL Logo" class="h-16 mx-4" />
+      <img src="assets/tata.png" alt="TATA Projects Logo" class="h-16 mx-4" />
+      <img src="assets/bsnl.png" alt="BSNL Logo" class="h-16 mx-4" />
+      <img src="assets/paytm.png" alt="Paytm Logo" class="h-16 mx-4" />
+      <img src="assets/indian.png" alt="Indian Money Logo" class="h-16 mx-4" />
+      <img src="assets/airtel.png" alt="Airtel Logo" class="h-16 mx-4" />
+      <img src="assets/bro.png" alt="BRO Logo" class="h-16 mx-4" />
+
+      <!-- Duplicate logos for seamless scrolling -->
+      <img src="assets/tcil.png" alt="TCIL Logo" class="h-16 mx-4" />
+      <img src="assets/tata.png" alt="TATA Projects Logo" class="h-16 mx-4" />
+      <img src="assets/bsnl.png" alt="BSNL Logo" class="h-16 mx-4" />
+      <img src="assets/paytm.png" alt="Paytm Logo" class="h-16 mx-4" />
+      <img src="assets/indian.png" alt="Indian Money Logo" class="h-16 mx-4" />
+      <img src="assets/airtel.png" alt="Airtel Logo" class="h-16 mx-4" />
+      <img src="assets/bro.png" alt="BRO Logo" class="h-16 mx-4" />
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="bg-[#162d42] py-[40px]">
+  <!-- Heading -->
+  <h2 class="mx-auto mb-4 text-center text-[28px] font-[600] text-slate-50 sm:text-[34px]">Technology Stack</h2>
+  <p class="mx-auto text-center text-[16px] font-[500] text-slate-200 md:text-[18px] sm:max-w-[75%]">
+    Our development stack includes the best tools and frameworks to deliver
+    <span class="font-[600] text-white">fast</span>, <span class="font-[600] text-white">secure</span>, and
+    <span class="font-[600] text-white">scalable</span> applications.
+  </p>
+  <!-- Tabs -->
+  <div class="mx-auto max-w-[90%] py-[40px]">
+    <div class="mx-auto mb-[30px] flex max-w-[90%] justify-center p-[20px]">
+      <!-- Frontend -->
+      <div
+        class="flex w-[180px] cursor-pointer flex-col items-center gap-[12px] border-b border-r border-slate-500 px-[12px] py-[15px]"
+        [ngClass]="selectedTab === 'Frontend' ? 'border-b-[4px] border-b-[#1b67b2]' : 'border-b-[1px]'"
+        (click)="setTab('Frontend')"
+      >
+        <img src="assets/frontend.svg" class="h-[30px] w-[30px]" />
+        <span class="text-slate-300 hover:text-slate-50">Frontend</span>
+      </div>
+      <!-- Backend -->
+      <div
+        class="flex w-[180px] cursor-pointer flex-col items-center gap-[12px] border-b border-r border-slate-500 px-[12px] py-[15px]"
+        [ngClass]="selectedTab === 'Backend' ? 'border-b-[4px] border-b-[#1b67b2]' : 'border-b-[1px]'"
+        (click)="setTab('Backend')"
+      >
+        <img src="assets/backend.svg" class="h-[30px] w-[30px]" />
+        <span class="text-slate-300 hover:text-slate-50">Backend</span>
+      </div>
+      <!-- Mobile App -->
+      <div
+        class="flex w-[180px] cursor-pointer flex-col items-center gap-[12px] border-b border-r border-slate-500 px-[12px] py-[15px]"
+        [ngClass]="selectedTab === 'Mobile' ? 'border-b-[4px] border-b-[#1b67b2]' : 'border-b-[1px]'"
+        (click)="setTab('Mobile')"
+      >
+        <img src="assets/mobile.svg" class="h-[30px] w-[30px]" />
+        <span class="text-slate-300 hover:text-slate-50">Mobile App</span>
+      </div>
+      <!-- Cloud -->
+      <div
+        class="flex w-[180px] cursor-pointer flex-col items-center gap-[12px] border-b border-r border-slate-500 px-[12px] py-[15px]"
+        [ngClass]="selectedTab === 'Cloud' ? 'border-b-[4px] border-b-[#1b67b2]' : 'border-b-[1px]'"
+        (click)="setTab('Cloud')"
+      >
+        <img src="assets/devops.svg" class="h-[30px] w-[30px]" />
+        <span class="text-slate-300 hover:text-slate-50">Cloud & DevOps</span>
+      </div>
+      <!-- Databases -->
+      <div
+        class="flex w-[180px] cursor-pointer flex-col items-center gap-[12px] border-b px-[12px] py-[15px]"
+        [ngClass]="selectedTab === 'Databases' ? 'border-b-[4px] border-b-[#1b67b2]' : 'border-b-[1px]'"
+        (click)="setTab('Databases')"
+      >
+        <img src="assets/database.svg" class="h-[30px] w-[30px]" />
+        <span class="text-slate-300 hover:text-slate-50">Databases</span>
+      </div>
+    </div>
+    <!-- Content Sections -->
+    <div class="mx-auto max-w-[90%] px-[20px]">
+      <!-- ✅ Frontend -->
+      <div *ngIf="selectedTab === 'Frontend'" class="grid grid-cols-5 gap-[10px] gap-y-[25px] py-[32px]">
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/angular.svg" class="w-[60px]" /><span class="text-slate-50">Angular</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/react.svg" class="w-[60px]" /><span class="text-slate-50">React</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/vue.svg" class="w-[60px]" /><span class="text-slate-50">Vue.js</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/css.svg" class="w-[60px]" /><span class="text-slate-50">HTML5</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/html.svg" class="w-[60px]" /><span class="text-slate-50">CSS3</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/knockout.svg" class="w-[60px]" /><span class="text-slate-50">Knockout</span>
+        </div>
+      </div>
+      <!-- ✅ Backend -->
+      <div *ngIf="selectedTab === 'Backend'" class="grid grid-cols-5 gap-[10px] gap-y-[25px] py-[32px]">
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/node.svg" class="w-[60px]" /><span class="text-slate-50">Node Js</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/java.svg" class="w-[60px]" /><span class="text-slate-50">Java</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/python.svg" class="w-[60px]" /><span class="text-slate-50">Python</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/php.svg" class="w-[60px]" /><span class="text-slate-50">PHP</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/c+.svg" class="w-[60px]" /><span class="text-slate-50">C#</span>
+        </div>
+      </div>
+      <!-- ✅ Mobile App -->
+      <div *ngIf="selectedTab === 'Mobile'" class="grid grid-cols-5 gap-[10px] gap-y-[25px] py-[32px]">
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/swift.svg" class="w-[60px]" /><span class="text-slate-50">Swift</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/java.svg" class="w-[60px]" /><span class="text-slate-50">Java</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/flutter.svg" class="w-[60px]" /><span class="text-slate-50">Flutter</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/react.svg" class="w-[60px]" /><span class="text-slate-50">React Native</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/kotlin.svg" class="w-[60px]" /><span class="text-slate-50">Kotlin</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/xamrain.svg" class="w-[60px]" /><span class="text-slate-50">Xamarin</span>
+        </div>
+      </div>
+      <!-- ✅ Cloud & DevOps -->
+      <div *ngIf="selectedTab === 'Cloud'" class="grid grid-cols-5 gap-[10px] gap-y-[25px] py-[32px]">
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/aws.svg" class="w-[60px]" /><span class="text-slate-50">AWS</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/github.svg" class="w-[60px]" /><span class="text-slate-50">Github Actions</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/terafort.svg" class="w-[60px]" /><span class="text-slate-50">Terraform</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/kunbernets.svg" class="w-[60px]" /><span class="text-slate-50">Kubernetes</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/CICD.svg" class="w-[60px]" /><span class="text-slate-50">GitLab CI/CD</span>
+        </div>
+      </div>
+      <!-- ✅ Databases -->
+      <div *ngIf="selectedTab === 'Databases'" class="grid grid-cols-5 gap-[10px] gap-y-[25px] py-[32px]">
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/mysql.svg" class="w-[60px]" /><span class="text-slate-50">MySQL</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/postgrey.svg" class="w-[60px]" /><span class="text-slate-50">PostgreSQL</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/mongo.svg" class="w-[60px]" /><span class="text-slate-50">MongoDB</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/dynamo.svg" class="w-[60px]" /><span class="text-slate-50">Dynamo DB</span>
+        </div>
+        <div class="flex flex-col items-center gap-[9px]">
+          <img src="assets/sqlserver.svg" class="w-[60px]" /><span class="text-slate-50">SQL Server</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== Certificates Slider Section ====== -->

@@ -1,0 +1,472 @@
+<section
+  class="relative min-h-[80vh] flex flex-col justify-center items-center py-[40px]"
+  style="background-image: url('assets/fin.webp');"
+>
+  <div class="max-w-[75%] mx-auto">
+    <h1 class="text-[42px] font-[700] text-slate-100 bannerSecond text-center z-[10]">
+      Secure, Scalable, and Smart <span class="text-orange-600">Finance App Development Solutions</span>
+    </h1>
+    <p class="text-[18px] text-center leading-[28px] text-slate-50 mb-[30px] mt-[15px] ">
+      We integrate technical expertise with deep fintech knowledge to deliver secure, scalable,
+      and user-friendly financial solutions. Our development services range from mobile banking
+      to digital wallets and aim to create innovative, user-centric, and
+      regulatory-compliant apps for seamless digital transformation.
+      <div class="flex justify-center gap-[12px] max-w-[70%] flex-wrap mx-auto">
+    <div class="bg-transparent text-slate-100 text-center text-[13px] font-[600] sm:text-[16px] px-[8px] rounded-[8px] py-[10px] border ">Financial Institutions</div>
+    <div class="bg-transparent text-slate-100 text-center text-[13px] font-[600] sm:text-[16px] px-[8px] rounded-[8px] py-[10px] border ">FinTech Startups</div>
+    <div class="bg-transparent text-slate-100 text-center text-[13px] font-[600] sm:text-[16px] px-[8px] rounded-[8px] py-[10px] border ">Insurance Providers</div>
+    <div class="bg-transparent text-slate-100 text-center text-[13px] font-[600] sm:text-[16px] px-[8px] rounded-[8px] py-[10px] border ">Trading and Investment Platforms</div>
+    <div class="bg-transparent text-slate-100 text-center text-[13px] font-[600] sm:text-[16px] px-[8px] rounded-[8px] py-[10px] border ">Payment Service Providers</div>
+    <div class="bg-transparent text-slate-100 text-center text-[13px] font-[600] sm:text-[16px] px-[8px] rounded-[8px] py-[10px] border ">Wealth Management Firms</div>
+  </div>
+  </div>
+
+</section>
+
+
+
+<div #statsSection class="bg-slate-50 rounded-[12px] max-w-[90%] mx-auto py-[40px]">
+  <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-[12px] xs:gap-[20px]">
+    <div class="rounded-[20px] px-[27px] sm:py-[27px]" *ngFor="let stat of stats">
+      <div class="flex items-center space-x-8 py-[10px]">
+        <hr
+          class="w-[6px] h-[70px]"
+          style="background: linear-gradient(to right, rgb(4, 86, 238), rgb(5, 67, 240)); border: none;"
+        />
+        <span class="text-[20px] sm:text-[32px] md:text-[48px] font-bold text-gray-900">
+          {{ stat.count }}{{ stat.suffix }}
+        </span>
+      </div>
+      <span class="text-slate-700 text-[12px] sm:text-[16px] leading-[2px] font-medium">
+        {{ stat.label }}
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="mt-10 min-h-[40vh]">
+  <div
+    class="rounded-[30px] max-w-[90%] mx-auto p-7 sm:p-10 bg-cover bg-center"
+    style="background-image: url('assets/lines.webp');"
+  >
+    <h2 class="mb-2 text-[28px] sm:text-[30px] sm:max-w-[80%] mx-auto text-center font-semibold tracking-tight text-white">
+      Empowering Digital Finance with Smart Tech Solutions
+    </h2>
+
+    <p class="text-white text-[16px] sm:font-medium text-center leading-[26px] sm:max-w-[90%] mx-auto pt-2.5">
+      The financial services industry is rapidly evolving, driven by the need for enhanced security, real-time data processing, and personalized customer experiences.
+      As digital transformation accelerates,
+       institutions must adopt cutting-edge technologies to meet compliance,
+        mitigate risk, and deliver seamless user journeys.
+
+    <p class="text-white text-[16px] sm:font-medium text-center leading-[26px] sm:max-w-[90%] mx-auto pt-4">
+      nexTonecode delivers future-ready IT solutions designed for the financial sector, including banks,
+      insurance companies, NBFCs, and fintech innovators. With a focus on security,
+      compliance, and performance, we help financial institutions streamline operations, enhance customer engagement, and drive digital transformation at scale.
+    </p>
+  </div>
+</div>
+
+
+
+<section class="container mx-auto px-4 py-8 md:py-12 lg:py-16">
+  <h2 class="text-2xl sm:text-4xl md:text-4xl text-center font-bold text-gray-800 mb-8 sm:mb-10 lg:mb-12 leading-tight">
+    Key Features of Our<span class="text-[#1B67B2]">Financial IT</span> Services
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6">
+    <!-- Feature Item 1 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">AI-driven risk assessment and fraud detection</p>
+    </div>
+
+    <!-- Feature Item 2 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">Robust data security and encryption</p>
+    </div>
+
+    <!-- Feature Item 3 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">Scalable cloud-based infrastructure</p>
+    </div>
+
+    <!-- Feature Item 4 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">Real-time analytics and reporting</p>
+    </div>
+
+    <!-- Feature Item 5 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">Omnichannel digital banking solutions</p>
+    </div>
+
+    <!-- Feature Item 6 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">Secure mobile payment integration</p>
+    </div>
+
+    <!-- Feature Item 7 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">Regulatory compliance and audit readiness</p>
+    </div>
+
+    <!-- Feature Item 8 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">Blockchain-enabled transaction systems</p>
+    </div>
+
+    <!-- Feature Item 9 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">Custom fintech app development</p>
+    </div>
+
+    <!-- Feature Item 10 -->
+    <div class="flex items-center justify-center border border-blue-400 bg-blue-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 min-h-[80px]">
+      <p class="text-base sm:text-lg font-semibold text-[#1B67B2] text-center">API integrations with third-party services</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<div class="min-h-[30vh] py-[40px]">
+  <div class="max-w-[90%] mx-auto px-[12px]">
+
+    <h2 class="text-[28px] leading-[38px] sm:text-[34px] sm:leading-[45px] mx-auto text-center w-full tracking-tight md:max-w-[75%] font-[600] text-slate-900">
+      Our Diverse Solutions for Evolving Finance Industry Needs
+    </h2>
+
+    <!-- Yeh paragraph abhi khali hai, agar aap ismein content dalna chahte hain toh yahan add kar sakte hain -->
+    <p class="text-[16px] leading-[26px] text-slate-700 py-[16px] text-center sm:max-w-[75%] mx-auto">
+     We offer innovative, secure, and scalable financial app development solutions tailored to the evolving needs of finance businesses.
+    </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 py-6">
+    <!-- Solution Item 1 -->
+    <div class="p-6 border border-gray-300 rounded-xl group hover:scale-105 hover:bg-sky-50 hover:border-blue-600 transition-all duration-500 ease-in-out">
+      <p class="text-lg sm:text-xl font-semibold group-hover:text-blue-700 text-gray-800 text-center mb-2">
+        Mobile Banking Solutions
+      </p>
+      <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+        We deliver secure and user-friendly mobile banking app development services to the finance industry. Our app solutions enable seamless transactions, account management, and real-time updates for customers, ensuring a superior digital banking experience on the go.
+      </p>
+    </div>
+
+    <!-- Solution Item 2 -->
+    <div class="p-6 border border-gray-300 rounded-xl group hover:scale-105 hover:bg-sky-50 hover:border-blue-600 transition-all duration-500 ease-in-out">
+      <p class="text-lg sm:text-xl font-semibold group-hover:text-blue-700 text-gray-800 text-center mb-2">
+        Digital Wallet Development
+      </p>
+      <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+        nexTonecodes provides digital wallet development solutions that simplify cashless transactions. Our solutions offer secure payment options, multi-currency support, and integration with payment gateways, making everyday payments quick and hassle-free for users.
+      </p>
+    </div>
+
+    <!-- Solution Item 3 -->
+    <div class="p-6 border border-gray-300 rounded-xl group hover:scale-105 hover:bg-sky-50 hover:border-blue-600 transition-all duration-500 ease-in-out">
+      <p class="text-lg sm:text-xl font-semibold group-hover:text-blue-700 text-gray-800 text-center mb-2">
+        Investment & Trading Platforms
+      </p>
+      <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+        We create robust and secure investment platforms for stock trading, portfolio management, and cryptocurrency exchanges, providing real-time data, analytics, and seamless transactions for investors and traders.
+      </p>
+    </div>
+
+    <!-- Solution Item 4 -->
+    <div class="p-6 border border-gray-300 rounded-xl group hover:scale-105 hover:bg-sky-50 hover:border-blue-600 transition-all duration-500 ease-in-out">
+      <p class="text-lg sm:text-xl font-semibold group-hover:text-blue-700 text-gray-800 text-center mb-2">
+       Loan & Credit Management Systems
+      </p>
+      <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+       Our loan management solutions streamline the loan lifecycle, from application to disbursement and repayment, integrating automated credit scoring and fraud detection to ensure efficiency and risk mitigation.
+      </p>
+    </div>
+
+    <!-- Solution Item 5 -->
+    <div class="p-6 border border-gray-300 rounded-xl group hover:scale-105 hover:bg-sky-50 hover:border-blue-600 transition-all duration-500 ease-in-out">
+      <p class="text-lg sm:text-xl font-semibold group-hover:text-blue-700 text-gray-800 text-center mb-2">
+        Insurance Management Solutions
+      </p>
+      <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+        We develop customized insurance apps for policy management, claims processing, and real-time updates. These apps help insurance companies improve customer engagement and operational efficiency while ensuring compliance with industry regulations.
+      </p>
+    </div>
+
+    <!-- Solution Item 6 -->
+    <div class="p-6 border border-gray-300 rounded-xl group hover:scale-105 hover:bg-sky-50 hover:border-blue-600 transition-all duration-500 ease-in-out">
+      <p class="text-lg sm:text-xl font-semibold group-hover:text-blue-700 text-gray-800 text-center mb-2">
+        Wealth & Asset Management Solutions
+      </p>
+      <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+        We offer advanced wealth and asset management solutions, providing clients with tools for real-time portfolio tracking, investment analysis, and personalized financial planning. Our solutions help finance service providers manage and grow their assets efficiently.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="pt-[40px]">
+  <div
+    class="min-h-[60vh] my-[40px] bg-cover bg-center"
+    style="background-image: url('assets/banner.webp');"
+  >
+    <div class="max-w-[90%] mx-auto px-[12px]">
+      <div class="text">
+        <p
+          class="mb-2 text-[28px] leading-[38px] sm:text-[34px] sm:leading-[45px] mx-auto text-center w-full tracking-tight md:max-w-[75%] font-[600] text-slate-900"
+        >
+          From FinTech Startups to Established Financial Institutions, Our Finance Solutions Provide the Expertise for Success
+        </p>
+      </div>
+      <p
+        class="text-[16px] ss:text-[20px] text-slate-700 py-[16px] text-center sm:max-w-[85%] mx-auto"
+      >
+        Our finance solutions empower businesses with the tools and expertise to navigate challenges
+        , drive growth, and stay ahead in a rapidly evolving industry.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-[20px] py-[30px]">
+        <div class="flex items-start gap-[20px] max-w-[90%] mx-auto">
+          <!-- Personalized Solutions SVG -->
+          <img
+            src="assets/highsecurity.svg"
+            alt="Engagement Features"
+            class="h-[60px] w-[60px]"
+          />
+          <div>
+            <p
+              class="text-[20px] tracking-[0.6px] font-[600] text-slate-800"
+            >
+             High-Security Measures
+            </p>
+            <p class="text-[15px] text-slate-600 py-[16px] leading-[23px]">
+             Our solutions incorporate the latest encryption technologies, multi-factor authentication,
+             and real-time fraud detection to protect sensitive financial information.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start gap-[20px] max-w-[90%] mx-auto">
+          <!-- Engagement Features SVG -->
+          <img
+            src="assets/eye.svg"
+            alt="Engagement Features"
+            class="h-[60px] w-[60px]"
+          />
+          <div>
+            <p
+              class="text-[20px] tracking-[0.6px] font-[600] text-slate-800"
+            >
+              Real-Time Data Analytics
+            </p>
+            <p class="text-[15px] text-slate-600 py-[16px] leading-[23px]">
+             Our finance solutions provide real-time financial data and in-depth analytics.
+              This helps you track business performance, optimize investment strategies,
+               and make informed decisions with up-to-date insights.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start gap-[20px] max-w-[90%] mx-auto">
+          <!-- Seamless Integration SVG -->
+          <img
+            src="assets/digital.svg"
+            alt="Seamless Integration"
+            class="h-[60px] w-[60px]"
+          />
+          <div>
+            <p
+              class="text-[20px] tracking-[0.6px] font-[600] text-slate-800"
+            >
+              Digital Rights Management
+            </p>
+            <p class="text-[15px] text-slate-600 py-[16px] leading-[23px]">
+             Our apps are built to work seamlessly across multiple devices and platforms, such as web,
+              mobile, and tablet. This ensures that users can access financial services anytime, anywhere,
+              without limitations.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start gap-[20px] max-w-[90%] mx-auto">
+          <!-- Strict Security Measures SVG -->
+          <img
+            src="assets/content.svg"
+            alt="Strict Security Measures"
+            class="h-[60px] w-[60px]"
+          />
+          <div>
+            <p
+              class="text-[20px] tracking-[0.6px] font-[600] text-slate-800"
+            >
+              Content Delivery Network
+            </p>
+            <p class="text-[15px] text-slate-600 py-[16px] leading-[23px]">
+              Our solutions are cost-effective and scalable, enabling you to leverage advanced financial technologies without overspending, ensuring sustainable growth at any business stage.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start gap-[20px] max-w-[90%] mx-auto">
+          <!-- Video Management System -->
+          <img
+            src="assets/video.svg"
+            alt="Video Management System"
+            class="h-[60px] w-[60px]"
+          />
+          <div>
+            <p
+              class="text-[20px] tracking-[0.6px] font-[600] text-slate-800"
+            >
+              Video Management Solution
+            </p>
+            <p class="text-[15px] text-slate-600 py-[16px] leading-[23px]">
+              Our solutions streamline financial workflows like invoicing, payments, budgeting, and reporting, reducing manual work and freeing up resources for more strategic activities.
+            </p>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="min-h-[30vh] py-10 mt-10 bg-gray-50 bg-cover bg-center"
+     style="background-image: url('assets/dotted.webp');">
+
+  <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-10">
+
+    <!-- Left Text Block -->
+    <div class="sm:max-w-[55%]">
+      <div class="flex items-start gap-5">
+        <!-- Orange Divider -->
+        <div class="w-1 h-24 bg-orange-600"></div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
+          Want to Scale Your Financial Solutions Seamlessly? <br class="hidden sm:block"/>Let’s Connect!
+        </h2>
+      </div>
+      <p class="mt-4 text-base sm:text-lg text-slate-700 leading-relaxed">
+        Our professionals are ready to help you scale your financial solutions with seamless
+         integration and cutting-edge technology.
+      </p>
+    </div>
+
+    <!-- Right Contact Block -->
+    <div class="flex flex-col items-center text-center">
+      <!-- Phone Icon -->
+      <div class="text-[#1b67b2] text-5xl mb-2">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+             viewBox="0 0 24 24" height="1em" width="1em"
+             xmlns="http://www.w3.org/2000/svg">
+          <path fill="none" d="M0 0h24v24H0V0z"></path>
+          <path d="M20 15.51c-1.24 0-2.45-.2-3.57-.57a.84.84 0 0 0-.31-.05c-.26 0-.51.1-.71.29l-2.2 2.2a15.149 15.149 0 0 1-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1z"></path>
+        </svg>
+      </div>
+      <p class="text-slate-500 font-medium text-lg">Reach Out Now</p>
+      <a href="tel:+919711440630" class="text-[#1b67b2] font-bold text-lg">+91 120 4540 636</a>
+
+      <!-- Contact Button -->
+      <button routerLink="/contact"
+        class="group mt-5 bg-[#1b67b2] text-white rounded-lg px-6 sm:px-8 py-2
+               flex items-center gap-2 text-sm sm:text-base font-medium
+               transition-all duration-300 hover:bg-primary/90">
+        Contact Us
+        <span class="group-hover:translate-x-2 transition-transform duration-300">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+               viewBox="0 0 512 512" height="1em" width="1em"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224H32c-17.7 0-32
+                     14.3-32 32s14.3 32 32 32h370.7l-73.4 73.4c-12.5 12.5-12.5
+                     32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="min-h-[60vh] py-10">
+  <div class="max-w-[90%] mx-auto">
+
+    <!-- Heading -->
+    <h2 class="mb-6 text-[24px] sm:text-[34px] leading-[34px] sm:leading-[45px] font-[600] text-gray-800 text-center md:max-w-[70%] mx-auto">
+      Frequently Asked Questions
+    </h2>
+
+    <!-- FAQ Grid -->
+    <div class="py-8 grid grid-cols-1 sm:grid-cols-2 gap-8 px-4">
+
+      <!-- FAQ Item -->
+      <div class="flex gap-4">
+        <div class="h-[44px] w-[100px] flex items-center justify-center bg-blue-100 rounded-lg">
+          <img src="assets/custom1.svg" alt="FAQ Icon" class="h-[25px] w-[38px]">
+        </div>
+        <div>
+          <p class="text-[18px] font-[600] text-slate-700 leading-[26px]">
+            Can nexTonecodes build a custom app for financial services?
+          </p>
+          <p class="text-[15px] text-slate-600 leading-[24px] mt-2">
+           Yes, we specialize in creating tailor-made applications for the financial services industry. Our team makes sure all your requirements are met with the custom app development solution.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="flex gap-4">
+        <div class="h-[44px] w-[100px] flex items-center justify-center bg-blue-100 rounded-lg">
+          <img src="assets/custom1.svg" alt="FAQ Icon" class="h-[25px] w-[38px]">
+        </div>
+        <div>
+          <p class="text-[18px] font-[600] text-slate-700 leading-[26px]">
+           How long does it typically take to develop a finance app?
+          </p>
+          <p class="text-[15px] text-slate-600 leading-[24px] mt-2">
+            The development timeline differs based on the complexity and features of the finance application. A basic finance app typically takes 3-4 months to develop, while more complex platforms with advanced features may take 6-8 months or longer.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="flex gap-4">
+        <div class="h-[44px] w-[100px] flex items-center justify-center bg-blue-100 rounded-lg">
+          <img src="assets/custom1.svg" alt="FAQ Icon" class="h-[25px] w-[38px]">
+        </div>
+        <div>
+          <p class="text-[18px] font-[600] text-slate-700 leading-[26px]">
+           How Much Does It Cost to Develop a Financial App?
+          </p>
+          <p class="text-[15px] text-slate-600 leading-[24px] mt-2">
+            The cost of developing a financial app varies based on factors like app complexity, features, platform, and development team location. Basic finance app development costs may start from $10,000–$50,000, while complex, feature-rich apps can range from $50,000–$200,000.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="flex gap-4">
+        <div class="h-[44px] w-[100px] flex items-center justify-center bg-blue-100 rounded-lg">
+          <img src="assets/custom1.svg" alt="FAQ Icon" class="h-[25px] w-[38px]">
+        </div>
+        <div>
+          <p class="text-[18px] font-[600] text-slate-700 leading-[26px]">
+            How Do You Ensure Security in Finance Apps?
+          </p>
+          <p class="text-[15px] text-slate-600 leading-[24px] mt-2">
+            We implement advanced security measures, including end-to-end encryption, multi-factor authentication, secure payment gateways, regular security audits, anti-fraud mechanisms, and strict compliance with industry regulations to safeguard financial data and transactions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

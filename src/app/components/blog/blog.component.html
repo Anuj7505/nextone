@@ -1,0 +1,18 @@
+<section class="blog">
+  <div class="container">
+    <h2 class="section-title">Latest News & Blog</h2>
+    <p class="section-subtitle">Stay updated with our latest insights and articles</p>
+
+    <div class="blog-grid">
+      <div class="blog-card" *ngFor="let blog of blogs">
+        <img [src]="blog.image" alt="{{ blog.title }}" class="blog-img" />
+        <div class="blog-content">
+          <span class="date">{{ blog.date }}</span>
+          <h3>{{ blog.title }}</h3>
+          <p>{{ blog.excerpt }}</p>
+          <a [href]="blog.link" class="read-more">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

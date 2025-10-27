@@ -1,0 +1,18 @@
+<section class="portfolio">
+  <div class="container">
+    <h2 class="section-title">Our Projects</h2>
+    <p class="section-subtitle">Take a look at some of our recent works.</p>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card" *ngFor="let project of projects">
+        <div class="image-wrapper">
+          <img [src]="project.image" alt="{{ project.title }}" />
+          <div class="overlay">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.category }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

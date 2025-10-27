@@ -1,0 +1,113 @@
+<!-- HERO SLIDER SECTION -->
+<section class="relative h-[40vh] sm:h-[50vh] md:h-[55vh] overflow-hidden">
+  <!-- Slides -->
+  <div
+    *ngFor="let slide of slides; let i = index"
+    class="absolute inset-0 bg-cover bg-center transition-all duration-[1500ms] ease-in-out"
+    [ngClass]="{
+      'opacity-100 scale-100 z-[1]': i === currentSlide,
+      'opacity-0 scale-[1.05]': i !== currentSlide
+    }"
+    [style.backgroundImage]="'url(' + slide.image + ')'"
+  >
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Slide Text -->
+    <div
+      class="relative z-[2] flex flex-col items-center justify-center text-center h-full text-white px-4"
+    >
+      <h1
+        class="text-[clamp(1.5rem,5vw,3rem)] sm:text-[clamp(1.8rem,5vw,3rem)] font-bold leading-tight mb-4"
+      >
+        {{ slide.title }}
+      </h1>
+      <p
+        class="text-[clamp(0.9rem,2.5vw,1.2rem)] sm:text-[clamp(1rem,2.5vw,1.2rem)] mb-6"
+      >
+        {{ slide.subtitle }}
+      </p>
+      
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <button
+    (click)="prevSlide()"
+    class="absolute top-1/2 -translate-y-1/2 left-3 sm:left-4 md:left-6 bg-black/40 hover:bg-black/70 text-white text-xl sm:text-2xl md:text-3xl p-2 sm:p-3 md:p-4 rounded-full transition"
+  >
+    &#10094;
+  </button>
+  <button
+    (click)="nextSlide()"
+    class="absolute top-1/2 -translate-y-1/2 right-3 sm:right-4 md:right-6 bg-black/40 hover:bg-black/70 text-white text-xl sm:text-2xl md:text-3xl p-2 sm:p-3 md:p-4 rounded-full transition"
+  >
+    &#10095;
+  </button>
+</section>
+
+<!-- STATS SECTION -->
+<div
+  #statsSection
+  class="bg-slate-50 rounded-[12px] w-full max-w-6xl mx-auto py-[30px] sm:py-[40px] md:py-[60px] mt-[12px] sm:mt-[20px] md:mt-[32px]"
+>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-2 sm:px-4 md:px-8"
+  >
+    <div
+      class="text-center border-slate-300 border-r last:border-none"
+      *ngFor="let stat of stats"
+    >
+      <span
+        class="text-[#1b67b2] font-bold text-[28px] sm:text-[36px] md:text-[48px] block mb-2"
+      >
+        {{ stat.count }}{{ stat.suffix }}
+      </span>
+      <span
+        class="text-slate-700 text-[clamp(12px,2vw,16px)] font-medium"
+      >
+        {{ stat.label }}
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- CERTIFICATES SLIDER -->
+<section class="py-12 bg-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold mb-8">
+      Our Recognitions & Certifications
+    </h2>
+
+    <div
+      #certSlider
+      class="flex overflow-x-auto gap-6 px-2 scrollbar-hide whitespace-nowrap"
+    >
+      <!-- First set of certificates -->
+      <div
+        *ngFor="let cert of certificates"
+        class="flex-shrink-0 w-32 inline-flex flex-col items-center"
+      >
+        <img
+          [src]="cert.logo"
+          [alt]="cert.name"
+          class="h-20 object-contain mb-2"
+        />
+        
+      </div>
+
+      <!-- Duplicate set for seamless infinite scroll -->
+      <div
+        *ngFor="let cert of certificates"
+        class="flex-shrink-0 w-32 inline-flex flex-col items-center"
+      >
+        <img
+          [src]="cert.logo"
+          [alt]="cert.name"
+          class="h-20 object-contain mb-2"
+        />
+        
+      </div>
+    </div>
+  </div>
+</section>

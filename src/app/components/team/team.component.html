@@ -1,0 +1,82 @@
+<div class="relative bg-cover bg-center"
+style="background-image: url('assets/team.png');">
+<div class="relative max-w-[90%] mx-auto flex flex-col items-center justify-center min-h-[70vh] text-center px-4 py-16">
+  <h1 class="font-sans text-white text-[28px] sm:text-[36px] md:text-[45px] font-bold leading-tight drop-shadow-lg"> Meet the Visionaries Behind
+    <span class="text-[#4F8BEF]">nexTonecodes</span>
+  </h1>
+  <p class="mt-6 text-slate-200 text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed max-w-3xl">
+     Our strength lies in our team. We comprise a team of dynamic professionals who are passionate about transforming ideas into vision through digital solutions. Our teams work collaboratively to ensure we deliver excellence in every IT solution.
+    </p>
+  </div>
+</div>
+
+
+
+<div class="grid grid-cols-1 ss:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 py-12">
+  <div *ngFor="let leader of leaders; let i = index" class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+    <div class="relative w-[140px] h-[140px] rounded-full overflow-hidden mb-5 border-4 border-[#4F8BEF] transition-all duration-300">
+      <img [src]="leader.img" [alt]="leader.name" class="object-cover w-full h-full scale-105 transition-transform duration-300">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+    </div>
+    <div class="w-full text-center">
+      <h3 class="font-sans text-xl sm:text-2xl font-bold text-gray-800 mb-1 transition-colors duration-300">{{ leader.name }}</h3>
+      <p class="font-sans text-md sm:text-lg text-[#4F8BEF] font-semibold mb-3">{{ leader.role }}</p>
+      <p class="font-sans text-gray-600 text-[14px] sm:text-[15px] leading-relaxed max-w-sm mx-auto"
+         [ngClass]="{'line-clamp-4': !isExpanded[i]}">
+        {{ leader.bio }}
+      </p>
+      <button class="text-[#4F8BEF] hover:text-yellow-500 text-sm mt-2 transition-colors duration-300"
+              (click)="toggleReadMore(i)">
+        {{ isExpanded[i] ? 'Read Less' : 'Read More' }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-[60vh] pb-16 bg-white">
+  <div class="max-w-[90%] mx-auto flex flex-col sm:flex-row items-center gap-12 justify-between px-4 py-8">
+
+    <!-- Left Content -->
+    <div class="sm:max-w-[50%] text-center sm:text-left">
+      <h2 class="font-sans text-gray-800 text-[28px] sm:text-[36px] md:text-[42px] font-extrabold mb-4">
+        Join the <span class="text-[#4F8BEF]">nexTonecodes</span> team!
+      </h2>
+      <p class="font-sans text-gray-600 text-[16px] sm:text-[18px] py-3 font-light tracking-wide max-w-lg">
+        Innovate with the latest and greatest technologies & get to work on some of the coolest projects you can imagine.
+      </p>
+
+      <!-- CTA Button -->
+    <button
+  routerLink="/career"
+  class="group mx-auto sm:mx-0 mt-8 bg-[#4F8BEF] text-white rounded-full font-semibold
+         text-[15px] sm:text-[16px] md:text-[17px] px-8 sm:px-10 md:px-12 py-3 sm:py-4 flex items-center gap-3
+         transition duration-300 hover:bg-yellow-500 shadow-lg hover:shadow-xl">
+  Apply Now
+  <span class="group-hover:translate-x-2 transition duration-200 mt-[2px]">
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+         class="w-5 h-5">
+      <path
+        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3
+           0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32
+           32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5
+           32.8 0 45.3s32.8 12.5 45.3 0l128-128z">
+      </path>
+    </svg>
+  </span>
+</button>
+
+    </div>
+
+    <!-- Right Side Images -->
+    <div class="flex gap-4 sm:gap-6 mt-8 sm:mt-0">
+      <div class="flex flex-col gap-4 sm:gap-6">
+        <img src="assets/wc1.png" alt="Team Member" class="rounded-xl shadow-lg hover:scale-105 transition duration-300 object-cover h-[180px] w-auto">
+        <img src="assets/wc2.png" alt="Team Member" class="rounded-xl shadow-lg hover:scale-105 transition duration-300 object-cover h-[120px] w-auto">
+      </div>
+      <div class="flex flex-col gap-4 sm:gap-6 pt-10"> <!-- Adjusted pt for staggered look -->
+        <img src="assets/wc3.png" alt="Team Member" class="rounded-xl shadow-lg hover:scale-105 transition duration-300 object-cover h-[120px] w-auto">
+        <img src="assets/wc4.png" alt="Team Member" class="rounded-xl shadow-lg hover:scale-105 transition duration-300 object-cover h-[180px] w-auto"> <!-- Added another image for balance -->
+      </div>
+    </div>
+  </div>
+</div>

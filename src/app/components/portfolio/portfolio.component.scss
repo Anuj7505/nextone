@@ -1,0 +1,81 @@
+.portfolio {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+    .image-wrapper {
+      position: relative;
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 12px;
+        transition: transform 0.4s ease;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.6);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        border-radius: 12px;
+
+        h3 {
+          font-size: 1.3rem;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #ddd;
+        }
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+        .overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
